@@ -1,4 +1,5 @@
 import React from 'react'
+import EventItem from '../event-item';
 
 const EventList = (props) => {
 
@@ -7,7 +8,7 @@ const EventList = (props) => {
     return (
         <ul>
             {items.map(event => (
-                <li></li>
+                <EventItem />
             ))}
         </ul>
     )
