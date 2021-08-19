@@ -1,5 +1,6 @@
 import React from 'react'
 import EventItem from '../event-item';
+import classes from './event-list.module.css';
 
 const EventList = (props) => {
 
