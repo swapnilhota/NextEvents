@@ -2,6 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import { getFilteredEvents } from '../../dummy-data';
 import EventList from '../../components/events/event-list';
+import ResultsTitle from '../../components/events/results-title';
 
 const FilteredEventsPage = () => {
 
@@ -37,8 +38,11 @@ const FilteredEventsPage = () => {
         )
     }
 
+    const date = new Date(numYear, numMonth - 1);
+
     return (
         <div>
+            <ResultsTitle date={date} />
             <EventList items={filteredEvents} />
         </div>
     )
